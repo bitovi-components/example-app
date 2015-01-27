@@ -1,0 +1,29 @@
+{
+  "name": "example-app",
+  "version": "0.0.0",
+  "description": "An example app that shows off some of the components",
+  "main": "main",
+  "dependencies": {
+    "canjs": "2.2.0-alpha.8",
+    "can-tabs": "0.0.1-alpha.9",
+    "steal": "0.5.0-pre.3",
+    "steal-tools": "0.5.0-pre.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitovi-components/example-app"
+  },
+  "keywords": [
+    "CanJS",
+    "Bitovi"
+  ],
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitovi-components/example-app/issues"
+  },
+  "homepage": "https://github.com/bitovi-components/example-app"
+}

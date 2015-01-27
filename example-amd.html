@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script src="require.js"></script>
+        <script>
+        	require.config({
+			    paths: {
+			        "jquery": "node_modules/jquery/dist/jquery",
+			        "can": "node_modules/canjs/dist/amd/can"
+			    },
+			    packages: [{
+				    	name: 'can-tabs',
+				    	location: 'node_modules/can-tabs/dist/amd',
+				    	main: 'lib/can-tabs'
+			    }]
+			});
+			require(["main-amd"], function(){});
+        </script>
+    </body>
+</html>
