@@ -1,6 +1,6 @@
-<script type='text/stache' can-autorender>
+<script type='text/stache' id="demo" can-autorender>
 	<can-import from="bit-tabs"/>
-	
+	<h2>bit-tabs</h2>
 	<bit-tabs>
 	    <bit-panel title="CanJS">
 	      CanJS provides the MV*
@@ -9,7 +9,23 @@
 	      StealJS provides the infrastructure.
 	    </bit-panel>
   	</bit-tabs>
+
+  	<can-import from="bit-c3" />
+    <h2>bit-c3</h2>
+    <bit-c3>
+        <bit-c3-data>
+            <bit-c3-data-column key="dataSource" value="{dataSource}" />
+        </bit-c3-data>
+    </bit-c3>
 </script>
 
 <script src='./node_modules/steal/steal.js'
-	main="can/view/autorender/"></script>
+	main="can/view/autorender/">
+
+	import can from "can";
+    import $ from "jquery";
+
+    $("#demo").viewModel().attr({
+        dataSource: new can.List([1, 2, 3])
+    });
+</script>

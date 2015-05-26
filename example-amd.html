@@ -9,12 +9,19 @@
         	require.config({
 			    paths: {
 			        "jquery": "node_modules/jquery/dist/jquery",
-			        "can": "node_modules/can/dist/amd/can"
+			        "can": "node_modules/can/dist/amd/can",
+			        "d3": "node_modules/bit-c3/node_modules/d3/d3",
+			        "c3": "node_modules/bit-c3/node_modules/c3/c3"
 			    },
 			    packages: [{
 				    	name: 'bit-tabs',
 				    	location: 'node_modules/bit-tabs/dist/amd',
 				    	main: 'bit-tabs'
+			    },
+			    {
+				    	name: 'bit-c3',
+				    	location: 'node_modules/bit-c3/dist/amd',
+				    	main: 'bit-c3'
 			    }]
 			});
 			require(["main-amd"], function(){});
