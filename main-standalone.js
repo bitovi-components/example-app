@@ -11,7 +11,6 @@ var bitC3template = can.stache('<h2>bit-c3</h2><bit-c3>' +
     '</bit-c3-data>' +
 '</bit-c3>');
 
-$("body").append(bitC3template());
-$("body").viewModel().attr({
+$("body").append(bitC3template({
     dataSource: new can.List([1, 2, 3])
-});
+}));

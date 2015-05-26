@@ -6,7 +6,7 @@
   "dependencies": {
     "bit-c3": "0.0.1",
     "bit-tabs": "^0.0.4",
-    "can": "2.2.1",
+    "can": "2.2.5",
     "cssify": "^0.7.0",
     "jquery": "^2.1.3",
     "steal": "^0.8.0",

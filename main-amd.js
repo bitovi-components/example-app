@@ -12,8 +12,7 @@ define(["can", "jquery", "can/view/stache", "bit-tabs", "bit-c3"], function(can,
 	    '</bit-c3-data>' +
 	'</bit-c3>');
 
-	$("body").append(bitC3template());
-	$("body").viewModel().attr({
+	$("body").append(bitC3template({
 	    dataSource: new can.List([1, 2, 3])
-	});
+	}));
 });
