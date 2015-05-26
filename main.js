@@ -1,8 +1,23 @@
 require("can-tabs");
+require("bit-c3");
 require("can/view/stache/stache");
 var can = require("can");
 var $ = require("jquery");
 
-var template = can.stache("<h2>can-tabs</h2><can-tabs><bit-panel title='CanJS'>CanJS provides the MV*</bit-panel><bit-panel title='StealJS'>StealJS provides the infrastructure.</bit-panel></can-tabs>")
+var bitTabsTemplate = can.stache("<h2>bit-tabs</h2><bit-tabs>"+
+	"<bit-panel title='CanJS'>CanJS provides the MV*</bit-panel>"+
+	"<bit-panel title='StealJS'>Steal provides the build</bit-panel>"+
+"</bit-tabs>");
 
-$("body").append(template());
+$("body").append(bitTabsTemplate());
+
+var bitC3template = can.stache('<h2>bit-c3</h2><bit-c3>' +
+    '<bit-c3-data>' +
+        '<bit-c3-data-column key="dataSource" value="{dataSource}" />' +
+    '</bit-c3-data>' +
+'</bit-c3>');
+
+$("body").append(bitC3template());
+$("body").viewModel().attr({
+    dataSource: new can.List([1, 2, 3])
+});
