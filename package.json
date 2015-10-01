@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/bitovi-components/example-app",
   "devDependencies": {
-    "browserify": "^9.0.3"
+    "browserify": "^9.0.3",
+    "funcunit": "^3.0.0",
+    "steal-qunit": "0.0.3"
   }
 }
