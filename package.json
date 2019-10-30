@@ -32,6 +32,6 @@
   "devDependencies": {
     "browserify": "^9.0.3",
     "funcunit": "^3.0.0",
-    "steal-qunit": "0.0.3"
+    "steal-qunit": "^2.0.0"
   }
 }
